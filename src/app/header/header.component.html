@@ -1,0 +1,22 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-light bg-green">
+    <div class="container">
+      <i class="fas fa-store-alt fa-3x"></i>
+      <div id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="position-relative nav-item">
+            <div
+              class="position-absolute p-1 rounded-pill bg-white"
+              style="top: -5px; right: -10px"
+            >
+              <span>{{ cart.length }}</span>
+            </div>
+            <a class="nav-link" (click)="openCartDialog()"
+              ><i class="fas fa-shopping-basket fa-lg"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

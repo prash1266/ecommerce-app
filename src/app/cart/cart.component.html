@@ -1,0 +1,11 @@
+<div *ngIf="!data || data.length === 0; else cart" class="text-center">
+  <h3>Cart is empty</h3>
+</div>
+<ng-template #cart>
+  <textarea
+    class="form-control"
+    name="cart"
+    rows="10"
+    [(ngModel)]="jsonData"
+  ></textarea>
+</ng-template>
